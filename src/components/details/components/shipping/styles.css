@@ -1,0 +1,26 @@
+.shipping-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shipping-btn button {
+  margin: 0.6rem 0.95rem 0 0;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.shipping-btn button span {
+  font-size: 0.55rem;
+  color: #999CAD;
+  margin-left: 0.3rem;
+}
+
+.shipping-btn button.active {
+  background-color: #ECF1F4;
+}

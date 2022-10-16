@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .gallery {
+  width: 48%;
+}
+
+main .details {
+  width: 48%;
+}
+
+@media screen and (max-width: 765px) {
+  main {
+    flex-direction: column;
+  }
+  main .gallery {
+    width: 100%;
+  }
+  main .details {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0;
+  }
+}

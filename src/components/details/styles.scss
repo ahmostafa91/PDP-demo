@@ -1,0 +1,180 @@
+@import "../../variables";
+
+@mixin h6PickersStyle {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+@mixin pPickersStyle {
+  margin-left: 0.9rem;
+  color: $price-color;
+  font-weight: 500;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+
+  .details-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $main-heading-color;
+  }
+
+  .details-code-rate {
+    display: flex;
+
+    .code {
+      margin: 0 0.85rem 0 0;
+      color: $secondary-text-color;
+      width: 33.33%;
+    }
+
+    .rate {
+      margin: 0 1.5rem 0 0;
+      width: 33.33%;
+
+      .total {
+        color: $secondary-text-color;
+      }
+    }
+
+    .rate-icon {
+      margin: 0 1.5rem 0 0.95rem;
+      width: 33.33%;
+      text-align: end;
+
+      .star {
+        color: #f9c744;
+      }
+    }
+  }
+
+  .details-pieces-price {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    p {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 0.2rem;
+      color: $secondary-text-color;
+    }
+    h5 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .color-picker {
+    h6 {
+      @include h6PickersStyle;
+    }
+  }
+
+  .storage-picker {
+    margin-top: 1.5rem;
+
+    h6 {
+      @include h6PickersStyle;
+    }
+  }
+
+  .quantity {
+    margin-top: 1.5rem;
+
+    h6 {
+      @include h6PickersStyle;
+    }
+
+    .qty-heading {
+      display: flex;
+      align-items: baseline;
+
+      p {
+        @include pPickersStyle;
+      }
+    }
+  }
+
+  .shipping {
+    margin-top: 1.5rem;
+
+    h6 {
+      @include h6PickersStyle;
+    }
+
+    p {
+      @include pPickersStyle;
+    }
+
+    .shipping-heading {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .confirm-order {
+    margin-top: 1.5rem;
+
+    h6 {
+      @include h6PickersStyle;
+    }
+
+    p {
+      @include pPickersStyle;
+      color: $confirm-color;
+    }
+
+    .confirm-order-heading {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+}
+
+@media screen and (max-width: 400px) {
+  .details-container {
+    .details-code-rate {
+      flex-direction: column;
+      align-items: center;
+
+      .code {
+        margin: 0 auto 0.4rem;
+      }
+      .rate {
+        margin: 0 auto;
+      }
+      .rate-icon {
+        margin: 0 auto 0.4rem;
+        text-align: start;
+      }
+    }
+
+    .details-pieces-price {
+      flex-direction: column;
+      text-align: center;
+
+      .price-1 {
+        width: 100%;
+      }
+
+      .price-2 {
+        width: 100%;
+      }
+
+      .price-3 {
+        width: 100%;
+      }
+    }
+  }
+}

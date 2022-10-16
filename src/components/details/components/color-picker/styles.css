@@ -1,0 +1,27 @@
+.pickers {
+  display: flex;
+}
+
+.pickers button {
+  margin: 0 0.95rem 0 0;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: self-end;
+}
+
+.pickers button div {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.pickers button.active {
+  background-color: #ECF1F4;
+}

@@ -1,0 +1,28 @@
+@import '../../../../variables';
+
+.shipping-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  button {
+    margin: 0.6rem 0.95rem 0 0;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: $main-heading-color;
+
+    span {
+        font-size: 0.55rem;
+        color: $secondary-text-color;
+        margin-left: 0.3rem;
+    }
+
+    &.active {
+        background-color: $active-color;
+    }
+  }
+}

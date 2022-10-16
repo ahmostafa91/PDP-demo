@@ -1,0 +1,55 @@
+.main-image {
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 50%;
+    height: 30rem;
+  }
+}
+
+.row {
+  display: flex;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 2.5rem;
+
+  .column {
+    border-radius: 10px;
+    cursor: pointer;
+
+    img {
+      width: 80%;
+      height: 80%;
+      border-radius: 15%;
+
+      &:hover {
+        border-radius: 11%;
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .main-image {
+  
+    img {
+      height: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-image {
+  
+    img {
+      height: 15rem;
+    }
+  }
+}
+

@@ -1,0 +1,171 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container .details-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #111111;
+}
+
+.details-container .details-code-rate {
+  display: flex;
+}
+
+.details-container .details-code-rate .code {
+  margin: 0 0.85rem 0 0;
+  color: #999CAD;
+  width: 33.33%;
+}
+
+.details-container .details-code-rate .rate {
+  margin: 0 1.5rem 0 0;
+  width: 33.33%;
+}
+
+.details-container .details-code-rate .rate .total {
+  color: #999CAD;
+}
+
+.details-container .details-code-rate .rate-icon {
+  margin: 0 1.5rem 0 0.95rem;
+  width: 33.33%;
+  text-align: end;
+}
+
+.details-container .details-code-rate .rate-icon .star {
+  color: #f9c744;
+}
+
+.details-container .details-pieces-price {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.details-container .details-pieces-price p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0.2rem;
+  color: #999CAD;
+}
+
+.details-container .details-pieces-price h5 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.details-container .color-picker h6 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+.details-container .storage-picker {
+  margin-top: 1.5rem;
+}
+
+.details-container .storage-picker h6 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+.details-container .quantity {
+  margin-top: 1.5rem;
+}
+
+.details-container .quantity h6 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+.details-container .quantity .qty-heading {
+  display: flex;
+  align-items: baseline;
+}
+
+.details-container .quantity .qty-heading p {
+  margin-left: 0.9rem;
+  color: #F95659;
+  font-weight: 500;
+}
+
+.details-container .shipping {
+  margin-top: 1.5rem;
+}
+
+.details-container .shipping h6 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+.details-container .shipping p {
+  margin-left: 0.9rem;
+  color: #F95659;
+  font-weight: 500;
+}
+
+.details-container .shipping .shipping-heading {
+  display: flex;
+  align-items: baseline;
+}
+
+.details-container .confirm-order {
+  margin-top: 1.5rem;
+}
+
+.details-container .confirm-order h6 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 1.2rem 0;
+}
+
+.details-container .confirm-order p {
+  margin-left: 0.9rem;
+  color: #F95659;
+  font-weight: 500;
+  color: #38B349;
+}
+
+.details-container .confirm-order .confirm-order-heading {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 400px) {
+  .details-container .details-code-rate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-container .details-code-rate .code {
+    margin: 0 auto 0.4rem;
+  }
+  .details-container .details-code-rate .rate {
+    margin: 0 auto;
+  }
+  .details-container .details-code-rate .rate-icon {
+    margin: 0 auto 0.4rem;
+    text-align: start;
+  }
+  .details-container .details-pieces-price {
+    flex-direction: column;
+    text-align: center;
+  }
+  .details-container .details-pieces-price .price-1 {
+    width: 100%;
+  }
+  .details-container .details-pieces-price .price-2 {
+    width: 100%;
+  }
+  .details-container .details-pieces-price .price-3 {
+    width: 100%;
+  }
+}

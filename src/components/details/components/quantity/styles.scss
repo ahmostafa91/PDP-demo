@@ -1,0 +1,22 @@
+@import '../../../../variables';
+
+.quantity-btn {
+    background-color: $active-color;
+    padding: 10px;
+    border-radius: 20px;
+
+    .minus {
+        margin-right: 1.6rem;
+        cursor: pointer;
+    }
+
+    .plus {
+        cursor: pointer;
+    }
+}
+.total-text {
+    margin-left: 0.65rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: $main-heading-color;
+}

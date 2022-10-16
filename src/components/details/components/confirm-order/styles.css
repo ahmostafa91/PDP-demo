@@ -1,0 +1,26 @@
+.confirm-order-btn {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.confirm-order-btn button {
+  margin: 0 0.95rem 0 0;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.confirm-order-btn .confirm {
+  background-color: #38B349;
+}
+
+.confirm-order-btn .call {
+  background-color: #0F3043;
+}
+
+.confirm-order-btn .call span {
+  margin-right: 0.2rem;
+}

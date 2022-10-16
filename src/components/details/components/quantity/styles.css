@@ -1,0 +1,21 @@
+.quantity-btn {
+  background-color: #ECF1F4;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.quantity-btn .minus {
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+
+.quantity-btn .plus {
+  cursor: pointer;
+}
+
+.total-text {
+  margin-left: 0.65rem;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #111111;
+}
